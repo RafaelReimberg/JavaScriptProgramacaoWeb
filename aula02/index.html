@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program in JavaScript</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: gray;
+        }
+        h1{
+            color: rgb(221, 221, 221);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 > strong{
+            font-weight: bolder;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(209, 208, 208, 0.699);
+        }
+
+        p{
+            color: white;
+        }
+        p > strong{
+            font-weight: bolder;
+            color: black;
+            text-shadow: 1px 1px 2px rgba(209, 208, 208, 0.699);
+        }
+    </style>
+</head>
+<body>
+    <h1><strong>JS</strong> - Tipos de Saída !</h1>
+    <p id="texto"></p>
+    <p>
+        <script>
+            document.write('Escrevendo um documento com <strong>document.write</strong> !<br><br>'); // document.write tem a mesma função que o innerHTML para representa a saída.
+            // document.write é usado mais para testes de funcionamento.
+            document.write(5 + 5);
+        </script>
+    </p>
+    <script src="js/script.js"></script> 
+</body>
+</html>

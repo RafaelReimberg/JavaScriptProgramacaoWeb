@@ -1,0 +1,32 @@
+<!--
+    JavaScript é a linguagem de programação usada para adcionar interatividade ao seu site.
+
+    (por exemplo: ações quando botões são pressionados, validações em formulários, mudanças dinâmicas na pagina, animações e muito mais.)
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program in JavaScript</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: gray;
+        }
+        h1{
+            color: rgb(221, 221, 221);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <h1>JS interno e Externo</h1>
+    <script src="js/index.js"> // arquivo externo e tendo prioridade no que está interno.
+        alert('Testando JavaScript - interno'); // isto é um JavaScript interno.
+    </script> <!-- JavaScript é declarado sempre no final da página e dentro da tag body.-->
+</body>
+</html>
