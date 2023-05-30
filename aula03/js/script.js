@@ -6,9 +6,10 @@ c=54; // Neste caso temos 4 declarações, o que se param elas é o ponto e virg
 document.write(a - b + c);
 
 // let pessoa = "Rafael" ; JavaScript não verifica o espaço no codigo. então tanto faz na declaração. (ignora)
-let pessoa="Rafael"; 
+let nome="Rafael"; 
+let sobrenome="Reimberg"
 
-document.write('<br><br>' + pessoa);
+document.write(`<br><br>${nome} ${sobrenome}`);
 
 document.getElementById("texto").innerHTML = 
     "Fazendo quebra de linha no código <strong>JS</strong>"; // Correto é não quebra a linha, mas se caso for necessário. Sempre fazer a quebra em um operador. (ex: sinal de = e jogar a apresentação na linha de baixo)
