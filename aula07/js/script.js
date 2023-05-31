@@ -130,7 +130,7 @@ document.getElementById("atriSoma").innerHTML = ("Atribuição de valor na varia
     valor2 = "Reimberg";
     total = valor1 + valor2; // o sinal de + aqui ele se forma um operador de sequencia e não um sinal matemático.
     
-    document.getElementById("atriSequen").innerHTML = (`Prazer meu nome é ${valor1} ${valor2}`);
+    document.getElementById("atriSequen").innerHTML = (`Prazer meu nome é ${valor1} ${valor2}` + " sinal de + mais valores das variaveis for string.");
 }
 
 {
@@ -140,7 +140,191 @@ document.getElementById("atriSoma").innerHTML = ("Atribuição de valor na varia
     valor2 = 10;
     total = (valor1 == valor2); // Comparação. retorna true (verdadeiro) false (falso)
     
-    document.getElementById("comp").innerHTML = ("O valor da comparação é " + total);
+    document.getElementById("comp").innerHTML = ("O valor da comparação é " + total + " ==");
 }
 
-// video parado em 16:21
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10;
+    valor2 = "10"; // ele tambem faz se caso a variavel for string tambem
+    total = (valor1 == valor2); // Comparação. retorna true (verdadeiro) false (falso)
+    
+    document.getElementById("comp2").innerHTML = ("O valor da comparação é " + total + " ==");
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = "10"; // string
+    total = (valor1 === valor2); // Comparação. retorna true (verdadeiro) false (falso). Neste, caso mostra se o valor é igual e também se o tipo da variavel se é igual.
+    
+    document.getElementById("comp3").innerHTML = ("O valor da comparação é " + total + " ==="); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 10; // number
+    total = (valor1 === valor2); // Comparação. retorna true (verdadeiro) false (falso). Neste, caso mostra se o valor é igual e também se o tipo da variavel se é igual.
+    
+    document.getElementById("comp4").innerHTML = ("O valor da comparação é " + total + " ==="); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 10; // number
+    total = (valor1 != valor2); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp5").innerHTML = ("O valor da comparação é " + total + " !="); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 15; // number
+    total = (valor1 != valor2); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp6").innerHTML = ("O valor da comparação é " + total + " !="); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = "15"; // string
+    total = (valor1 !== valor2); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp7").innerHTML = ("O valor da comparação é " + total + " !=="); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 10; // number
+    total = (valor1 !== valor2); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp8").innerHTML = ("O valor da comparação é " + total + " !=="); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 10; // number
+    total = (valor1 < 4); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp9").innerHTML = ("O valor da comparação é " + total + " < 4"); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 10; // number
+    total = (valor1 < 11); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp10").innerHTML = ("O valor da comparação é " + total + " < 11"); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 10; // number
+    total = (valor1 <= 11); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp11").innerHTML = ("O valor da comparação é " + total + " <= 11"); 
+}
+
+{
+    var valor1, valor2, total;
+    
+    valor1 = 10; // number
+    valor2 = 10; // number
+    total = (valor1 >= 11); // Comparação. se o valor é diferente e não igual.
+    
+    document.getElementById("comp12").innerHTML = ("O valor da comparação é " + total + " >= 11"); 
+}
+
+{
+    var idade, eleitor;
+    idade = 36;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    document.getElementById("ter").innerHTML = ("O valor ternario " + eleitor + ' eleitor= (idade<18) ? "Não eleitor": "Sim, eleitor" e a idade dele é ' + idade); 
+}
+
+{
+    var idade, eleitor;
+    idade = 17;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    document.getElementById("ter1").innerHTML = ("O valor ternario " + eleitor + ' eleitor= (idade<18) ? "Não eleitor": "Sim, eleitor" e a idade dele é ' + idade); 
+}
+
+{
+    var idade, eleitor, resultado;
+    idade = 28;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    resultado = (idade > 60 && idade < 70); // true se não false
+
+    document.getElementById("logico").innerHTML = ("O resultado da idade é " + resultado + " e a idade é " + idade);
+}    
+
+{
+    var idade, eleitor, resultado;
+    idade = 63;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    resultado = (idade > 60 && idade < 70); // true se não false
+
+    document.getElementById("logico1").innerHTML = ("O resultado da idade é " + resultado + " e a idade é " + idade);
+} 
+
+{
+    var idade, eleitor, resultado;
+    idade = 66;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    resultado = (idade === 62 || idade === 73); // true se não false
+
+    document.getElementById("logico2").innerHTML = ("O resultado da idade é " + resultado + " e a idade é " + idade);
+} 
+
+{
+    var idade, eleitor, resultado;
+    idade = 62;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    resultado = (idade === 62 || idade === 73); // true se não false
+
+    document.getElementById("logico3").innerHTML = ("O resultado da idade é " + resultado + " e a idade é " + idade);
+} 
+
+{
+    var idade, eleitor, resultado;
+    idade = 68;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    resultado = !(idade === 65); // true se não false
+
+    document.getElementById("logico4").innerHTML = ("O resultado da idade é " + resultado + " e a idade é " + idade);
+} 
+
+{
+    var idade, eleitor, resultado;
+    idade = 65;
+    eleitor = (idade < 18) ? "Não eleitor!": "Sim, eleitor! ";
+
+    resultado = !(idade === 65); // true se não false
+
+    document.getElementById("logico5").innerHTML = ("O resultado da idade é " + resultado + " e a idade é " + idade);
+} 
