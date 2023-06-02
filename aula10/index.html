@@ -64,16 +64,37 @@
         }
     </style>
 </head>
-<body> <!--onmousedown="alert('Clicou na tela')" ou onmouseup="alert('Clicou na tela')"-->
+<body onresize="console.log('Houve um redimencionamento')"> <!--onmousedown="alert('Clicou na tela')" ou onmouseup="alert('Clicou na tela')" // onload="alert('Terminou de carregar!')" -->
     <h1><strong>JS</strong> - Eventos !</h1>
     <p id="texto"></p>
     <button onclick="eventoClick()">Clique aqui</button>
     <hr>
     <button ondblclick="eventoDblClick()">Clique aqui</button>
     <hr>
+    <br><br>
+    <select onchange="mudou()" id="itens">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+        <option value="4">Valor 4</option>
+    </select>
+    <br><br>
+    <hr>
     <div id="teste" onmouseout="viraAzul()" onmouseover="viraVermelho()"style="margin: auto auto; width: 80%; height: 200px; background: blue;"></div>
     <hr>
     <input onfocus="limpaTexto()" id="campoTexto" type="text" style="padding: 80px; font-size: 40px;" placeholder="Digite alguma coisa" value="Já vem com texto">
+    <br>
+    <hr>
+    <br>
+    <input onkeypress="teclaPressionada()" onblur="eventoClick()" id="campoTexto" type="text" style="padding: 80px; font-size: 40px;" placeholder="Digite alguma coisa" value="Já vem com texto">
+    <br>
+    <hr>
+    <br>
+    <input onkeydown="teclaPressionada()" onblur="eventoClick()" id="campoTexto" type="text" style="padding: 80px; font-size: 40px;" placeholder="Digite alguma coisa">
+    <br>
+    <hr>
+    <br>
+
     <script src="js/script.js"></script> 
 </body>
 </html>

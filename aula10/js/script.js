@@ -49,9 +49,12 @@ function viraAzul(){
 //      p.append("O mouse moveu<br>");
 //}
 
-function limpaTexto(){
-    document.getElementById("campoTexto").value = "";
+function mudou(){
+   console.log('Mudou');
 }
 
-
-// video 18:40
+function teclaPressionada() {
+    //let input = document.getElementById("campoTexto").value;
+    //console.log(input);
+    console.log('Tecla pressionada');
+}
