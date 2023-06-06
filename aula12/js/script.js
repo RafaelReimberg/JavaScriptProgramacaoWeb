@@ -6,9 +6,9 @@ const lista2 = ["Suco", "refrigerante", "carne"]; // array
 const lista3 = ["Salgadinho", "Amendoin"]; // array 
 
 const jogadores = [
-    "Biro Biro", 
-    "Ribamar", 
-    "Pelé", 
+    "Biro Biro",
+    "Ribamar",
+    "Pelé",
     "Maradona",
     "Neymar",
     "Messi",
@@ -16,6 +16,9 @@ const jogadores = [
     "Vampeta",
     "Rafael"
 ]; // array
+
+const numeros = [40, 100, 1, 5, 25, 10];
+const numerosDecresente = [40, 100, 1, 5, 25, 10];
 
 //-------------------------------------------------------------------------------------------------
 // -- Metodos -- 
@@ -36,18 +39,50 @@ agenda.splice(1, 2, "Item adicionado 1", "Item adicionado 2"); // neste metodo e
 
 const superLista = lista1.concat(lista2, lista3); //  neste caso fazer uma concatenação na lista 1 com a lista 2. da para fazer com quantas lista ou array você tiver.
 
-const craques = jogadores.slice(2,7); // este metodo fatia a array na posição que você quiser. 
+const craques = jogadores.slice(2, 7); // este metodo fatia a array na posição que você quiser. porém a ultima posição setado não é exibida. 
 
+const jogOrdem = jogadores.sort(); // fazer ordenação alfabética
+
+numeros.sort(function (a, b) { return a - b }); // fazer ordenação numérica. 
+numerosDecresente.sort(function (a, b) { return b - a });
+
+const maior20 = numeros.filter(filtragem);
 //-------------------------------------------------------------------------------------------------
 //---- Apresentação
 document.getElementById("agenda").innerHTML = (`Apresenta todos os itens <strong>${agenda}</strong>`);
 document.getElementById("agenda2").innerHTML = (`Apresentan todos os intes com - de separação <strong>${agenda.join(" - ")}</strong>`); // join ele é um separador das arrays 
 document.getElementById("agenda3").innerHTML = (`Apresentan todos os intes com de espaço <strong>${agenda.join(" ")}</strong>`);
-document.getElementById("agenda4").innerHTML = (`Apresenta o ultimo item da array <strong>${(agenda[agenda.length -1])}</strong>`);
+document.getElementById("agenda4").innerHTML = (`Apresenta o ultimo item da array <strong>${(agenda[agenda.length - 1])}</strong>`);
 document.getElementById("agenda5").innerHTML = (`Valor deletado -> <strong>${agenda[3]}</strong>`);
-document.getElementById("agenda6").innerHTML = (`A lista completa é -> <strong>${superLista}</strong>`);
-document.getElementById("agenda7").innerHTML = (`Os craques são -> <strong>${craques}</strong>`);
 
+document.getElementById("agenda6").innerHTML = (`A lista completa é -> <strong>${superLista.join(", ")}</strong>`);
 
+document.getElementById("agenda7").innerHTML = (`Os craques são -> <strong>${craques.join(" ")}</strong>`);
 
-// video 14:09
+document.getElementById("agenda8").innerHTML = (`Os craques em ordem alfabética -> <strong>${jogOrdem.join(",<br>")}</strong>`);
+
+document.getElementById("agenda9").innerHTML = (`Os números na sequência -> <strong>${numeros.join(", ")}</strong>`);
+
+document.getElementById("agenda10").innerHTML = (`Os números na sequência decresente -> <strong>${numerosDecresente.join(", ")}</strong>`);
+
+document.getElementById("agenda11").innerHTML = (`O maior número é -> <strong>${MaiorNumero(numeros)}</strong>`);
+
+document.getElementById("agenda12").innerHTML = (`O menor número é -> <strong>${MenorNumero(numeros)}</strong>`);
+
+document.getElementById("agenda12").innerHTML = (`Os números maior que 20 é -> <strong>${maior20.join(" - ")}</strong>`);
+//-------------------------------------------------------------------------------------------------
+// --- funções (function)
+    function MaiorNumero(array){
+        return Math.max.apply(null, array);
+    }
+
+    function MenorNumero(array){
+        return Math.min.apply(null, array);
+    }
+
+    function filtragem(value, index, array){
+        return value > 20;
+        //function numOrdem(a, b){
+          //  return a -b
+        //}
+    }
