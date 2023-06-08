@@ -24,6 +24,7 @@ const fit = new Carro("Honda", "Fit", 2007);
 const civic = new Carro("Honda", "Civic",  2010);
     console.log(civic.buzina());
     document.getElementById('car').innerHTML = (`O Carro é <strong>${civic.buzina()}</strong>`);
+console.log(fit);
+fit.ano = 2016;
+console.log(fit);
 
-
-    // 9:46
