@@ -13,3 +13,20 @@ JSON.parse() -> Converte texto no padrão JSON em objetos
 JSON.stringify() -> Converte objetos em texto padrão JSON
 
 */
+
+// OBJETO PESSOA
+const pessoa = {
+    nome: "Rafael",
+    sobrenome: "Reimberg",
+    idade: 36 
+}
+
+let texto = JSON.stringify(pessoa);
+
+document.getElementById('json').innerHTML = texto;
+
+let obj = JSON.parse(texto);
+
+console.log(obj.sobrenome);
+
+// 04:52
