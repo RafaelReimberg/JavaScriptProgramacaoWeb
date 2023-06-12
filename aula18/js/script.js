@@ -71,4 +71,38 @@ document.getElementById('data1').innerHTML = (`A hora exata é -> <strong>${data
 
 //PEGAR OS VALORES SEPARADOS
 
-//14:11
+d = new Date();
+diaMes = d.getDate();
+mes = d.getMonth() + 1;
+ano = d.getFullYear();
+
+function addZero(x) {return x < 10 ? '0' + x : '' + x;};
+
+let dataPadraoBR = addZero(diaMes) + "/" + addZero(mes) + "/" + ano;
+
+document.getElementById('data2').innerHTML = (`A data Padrão brasileiro é <strong>${dataPadraoBR}</strong>`);
+
+// COMPARAR DATAS - MAIOR OU MENOR. EX: VENCIMENTOS.
+var hoje = new Date();
+var vencimento = new Date(2023, 6, 12);
+
+    if(hoje > vencimento){
+        console.log("Sua conta está expirado!");
+        document.getElementById('data3').innerHTML = ("Sua conta <strong>está expirado!</strong>");
+    }else{
+        console.log("Ainda não expirou, tudo certo!");
+        document.getElementById('data3').innerHTML = ("Ainda <strong>não expirou</strong>, tudo certo!");
+    }
+
+
+// DIFERENÇA ENTRE DUAS DATAS EM DIAS.
+var dataInicial = new Date();
+var dataFinal = new Date(2023, 11, 31);
+
+var diferencaTempo = dataFinal.getTime() - dataInicial.getTime();
+
+var diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000));
+
+console.log(diferencaDias);
+document.getElementById('data4').innerHTML = (`Os dias faltantes é <strong>${diferencaDias} dias</strong>`);
+
