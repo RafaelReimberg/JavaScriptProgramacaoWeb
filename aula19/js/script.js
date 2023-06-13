@@ -27,6 +27,6 @@ document.getElementById('json').innerHTML = texto;
 
 let obj = JSON.parse(texto);
 
-console.log(obj.sobrenome);
+console.log(obj);
 
 // 04:52
