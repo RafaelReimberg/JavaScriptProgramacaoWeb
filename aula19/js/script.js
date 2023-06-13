@@ -18,15 +18,45 @@ JSON.stringify() -> Converte objetos em texto padrão JSON
 const pessoa = {
     nome: "Rafael",
     sobrenome: "Reimberg",
-    idade: 36 
+    idade: 36,
+    valores: ["1.6", "1.4", "1.0"] 
 }
 
+//CONVERTEU PARA TEXTO JSON
 let texto = JSON.stringify(pessoa);
 
+//COLOCOU O TEXTO NO NOSSO HTML
 document.getElementById('json').innerHTML = texto;
 
+//CONVERTEMOS TEXTO EM OBJETO
 let obj = JSON.parse(texto);
 
-console.log(obj);
-
+//PEGAMOS UM VALOR DESTE OBJETO
+console.log(obj.valores[1]);
+document.getElementById('json1').innerHTML = (`<strong>${obj.nome} ${obj.sobrenome}</strong> e sua idade é <strong>${obj.idade}</strong>`);
 // 04:52
+
+function buscarCEP(){
+    let input = document.getElementById('cep').value;
+
+    const ajax = new XMLHttpRequest();
+    ajax.open('GET', 'https://viacep.com.br/ws/' + input + '/json/');
+    ajax.send();
+
+    ajax.onload = function(){
+        document.getElementById('json3').innerHTML = this.responseText;
+    }
+}
+
+//const ajax = new XMLHttpRequest();
+//ajax.open('GET', 'https://viacep.com.br/ws/04843120/json/');
+//ajax.send();
+
+//ajax.onload = function(){
+    //document.getElementById('json2').innerHTML = this.responseText;
+    //let obj = JSON.parse(this.responseText);
+    //alert(obj.ddd);
+//}
+
+
+// 15:47
