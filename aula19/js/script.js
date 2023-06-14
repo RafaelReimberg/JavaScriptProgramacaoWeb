@@ -29,12 +29,13 @@ let texto = JSON.stringify(pessoa);
 document.getElementById('json').innerHTML = texto;
 
 //CONVERTEMOS TEXTO EM OBJETO
-let obj = JSON.parse(texto);
+let objPessoa = JSON.parse(texto);
 
 //PEGAMOS UM VALOR DESTE OBJETO
-console.log(obj.valores[1]);
-document.getElementById('json1').innerHTML = (`<strong>${obj.nome} ${obj.sobrenome}</strong> e sua idade é <strong>${obj.idade}</strong>`);
+console.log(objPessoa.valores[1]);
+document.getElementById('json1').innerHTML = (`<strong>${objPessoa.nome} ${objPessoa.sobrenome}</strong> e sua idade é <strong>${objPessoa.idade}</strong>`);
 // 04:52
+
 
 function buscarCEP(){
     let input = document.getElementById('cep').value;
@@ -45,6 +46,15 @@ function buscarCEP(){
 
     ajax.onload = function(){
         document.getElementById('json3').innerHTML = this.responseText;
+        
+        //TRANSFORMEI O TEXTO EM OBJETO
+        let obj = JSON.parse(this.responseText);
+        //AQUI PEGUEI OS VALORES QUE EU QUERIA
+        let logradouro = obj.logradouro;
+        let cidade = obj.localidade;
+        let estado = obj.uf;
+
+        document.getElementById('json3').innerHTML = `Logradouro: ${logradouro}<br> Cidade: ${cidade}<br> Estado: ${estado}`;
     }
 }
 
