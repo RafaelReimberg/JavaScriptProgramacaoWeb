@@ -47,14 +47,14 @@ function marcarTarefa(id) {
 
     var icone = document.getElementById("icone_" + id);
     icone.classList.remove("mdi-circle-outline");
-    icone.classList.add("mdi-check-circle");
+    icone.classList.add("mdi-check_circle");
 
     item.parentNode.appendChild(item);
   } else {
     item.classList.remove("clicado");
 
     var icone = document.getElementById("icone_" + id);
-    icone.classList.remove("mdi-check-circle");
+    icone.classList.remove("mdi-check_circle");
     icone.classList.add("mdi-circle-outline");
   }
 }

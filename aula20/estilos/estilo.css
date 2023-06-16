@@ -102,7 +102,7 @@
     cursor: pointer;
   }
   
-  .mdi-check-circle {
+  .mdi-check-circle .check_circle {
     color: green;
   }
   
