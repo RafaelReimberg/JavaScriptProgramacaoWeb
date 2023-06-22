@@ -25,7 +25,7 @@ function addTarefa(){
     </div>`;
         //ADICIONAR NOVO ITEM NO MAIN (PAGINA HTML)
         main.innerHTML += novoItem;
-
+        
         //ZERAR O CAMPO DO INPUT 
         input.value = "";
         input.focus();
@@ -58,6 +58,7 @@ function marcaTarefa(id){
         icone.classList.add('mdi-circle-outline');
     }
 }
+
 
 input.addEventListener("keyup", function(event){
     // SE TECLOU O ENTER QUE O CÓDIGO É O (13)
