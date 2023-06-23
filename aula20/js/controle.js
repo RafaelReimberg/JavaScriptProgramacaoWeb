@@ -2,6 +2,7 @@ let contador = 0;
 let input = document.getElementById('inputTarefa');
 let btnAdd = document.getElementById('btn-add');
 let main = document.getElementById('areaLista');
+let totalTarefa = [];
 
 function addTarefa(){
     // PEGAR O VALOR DIGITADO NO INPUT (DIGITE SUA TAREFA)
@@ -58,7 +59,6 @@ function marcaTarefa(id){
         icone.classList.add('mdi-circle-outline');
     }
 }
-
 
 input.addEventListener("keyup", function(event){
     // SE TECLOU O ENTER QUE O CÓDIGO É O (13)
