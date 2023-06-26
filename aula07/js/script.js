@@ -74,13 +74,13 @@ document.getElementById("soma").innerHTML = ("A soma é " + total);
 }
 
 {
-var valor1, valor2, total;
+    var valor1, valor2, total;
 
-valor1 = 54;
-valor2 = 32;
-valor1 += valor2; // estamos usando calculo matemático.  soma
+    valor1 = 54;
+    valor2 = 32;
+    valor1 += valor2; // estamos usando calculo matemático.  soma
 
-document.getElementById("atriSoma").innerHTML = ("Atribuição de valor na variavel valor1 += valor2 " + valor1);
+    document.getElementById("atriSoma").innerHTML = ("Atribuição de valor na variavel valor1 += valor2 " + valor1);
 }
 
 {
