@@ -18,8 +18,9 @@ const carro = {
     placa: "DWM-4345",
     buzina: function() {alert('Biiiiiii')},
     completo: function(){
-        return "A marca é "+this.marca+" e o modelo é:"+this.modelo;
+        return "A marca é um "+this.marca+", e o modelo é "+this.modelo+ ", e o ano é "+this.ano+ ", sua placa é "+this.placa;
     }
 };
 
 console.log(carro.completo());
+document.getElementById('carro') . innerHTML = carro.completo();
