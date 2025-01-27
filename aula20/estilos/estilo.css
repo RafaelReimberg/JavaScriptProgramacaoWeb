@@ -43,8 +43,9 @@ button.add{
     border-bottom-right-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.205)
 }
+
 button.add:hover{
-    background: rgb(0, 128, 0);
+    background: rgb(0, 98, 245);
     color: rgb(255, 255, 255);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.205)
 }
@@ -73,7 +74,7 @@ main{
 }
 
 .item.clicado{
-    background: rgb(213, 253, 213);
+    background: rgb(213, 236, 253);
 }
 
 .item.clicado .item-nome{
@@ -109,11 +110,11 @@ main{
 }
 
 .delete:hover{
-    background: rgb(255, 0, 0);
+    background: rgb(255, 51, 0);
     color: rgb(255, 255, 255);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.205)
 }
 
 .mdi-check-circle{
-    color: rgb(0, 128, 0);
+    color: rgb(0, 98, 245);
 }
