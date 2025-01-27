@@ -84,7 +84,7 @@ document.getElementById('data2').innerHTML = (`A data Padrão brasileiro é <str
 
 // COMPARAR DATAS - MAIOR OU MENOR. EX: VENCIMENTOS.
 var hoje = new Date();
-var vencimento = new Date(2023, 6, 12);
+var vencimento = new Date(2025, 1, 27);
 
     if(hoje > vencimento){
         console.log("Sua conta está expirado!");
@@ -97,7 +97,7 @@ var vencimento = new Date(2023, 6, 12);
 
 // DIFERENÇA ENTRE DUAS DATAS EM DIAS.
 var dataInicial = new Date();
-var dataFinal = new Date(2023, 11, 31);
+var dataFinal = new Date(2025, 12, 31);
 
 var diferencaTempo = dataFinal.getTime() - dataInicial.getTime();
 
@@ -105,4 +105,3 @@ var diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000));
 
 console.log(diferencaDias);
 document.getElementById('data4').innerHTML = (`Os dias faltantes é <strong>${diferencaDias} dias</strong>`);
-
