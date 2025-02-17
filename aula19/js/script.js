@@ -1,5 +1,5 @@
 /** JSON **
- 
+
 JSON significa JavaScript Object Notation que traduzido pro português fica algo como notação de objeto JavaScript.
 
 Explicando de um modo simples JSON é basicamente uma forma de converter um objeto
@@ -19,7 +19,7 @@ const pessoa = {
     nome: "Rafael",
     sobrenome: "Reimberg",
     idade: 36,
-    valores: ["1.6", "1.4", "1.0"] 
+    valores: ["1.6", "1.4", "1.0"]
 }
 
 //CONVERTEU PARA TEXTO JSON
@@ -32,9 +32,9 @@ document.getElementById('json').innerHTML = texto;
 let objPessoa = JSON.parse(texto);
 
 //PEGAMOS UM VALOR DESTE OBJETO
-console.log(objPessoa.valores[1]);
+console.log(objPessoa.valores[2]);
 document.getElementById('json1').innerHTML = (`<strong>${objPessoa.nome} ${objPessoa.sobrenome}</strong> e sua idade é <strong>${objPessoa.idade}</strong>`);
-// 04:52
+
 
 
 function buscarCEP(){
@@ -46,7 +46,7 @@ function buscarCEP(){
 
     ajax.onload = function(){
         document.getElementById('json3').innerHTML = this.responseText;
-        
+
         //TRANSFORMEI O TEXTO EM OBJETO
         let obj = JSON.parse(this.responseText);
         //AQUI PEGUEI OS VALORES QUE EU QUERIA
