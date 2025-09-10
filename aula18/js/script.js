@@ -84,7 +84,7 @@ document.getElementById('data2').innerHTML = (`A data Padrão brasileiro é <str
 
 // COMPARAR DATAS - MAIOR OU MENOR. EX: VENCIMENTOS.
 var hoje = new Date();
-var vencimento = new Date(2025, 1, 27);
+var vencimento = new Date(2025, 12, 31);
 
     if(hoje > vencimento){
         console.log("Sua conta está expirado!");
