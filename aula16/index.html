@@ -87,19 +87,26 @@
             padding: 50px;
             font-size: 40px;
         }
-
-        button{
-            width: 200px;
-            height: 60px;
+        .btns{
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 20px;
+            margin-top: 20px;
+        }   
+        button{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 150px;
+            height: 60px;
+            font-size: 16px;
             border: none;
             border-radius: 10px;
-            margin: 10px;
+            margin: 5px;
             cursor: pointer;
-            padding: 50px;
+            padding: 10px;
         }
         
         button > p{
@@ -121,8 +128,10 @@
     <main>
         <h2>Controle de Tempo</h2>
         <p id="tempo">0</p>
-        <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
-        <button onclick="pararContagem()" class="stop">Parar Contagem</button>
+        <div class="btns">
+            <button onclick="ativarContagem()" class="start">Ativar Contagem</button>
+            <button onclick="pararContagem()" class="stop">Parar Contagem</button>
+        </div>
     </main>
     <script src="js/script.js"></script> 
 </body>
