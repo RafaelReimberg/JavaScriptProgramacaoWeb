@@ -20,10 +20,10 @@ function ativarContagem() {
     // Ativa a função apenas 1 vez quando der o tempo determinado
     //tempo = setTimeout(function () { document.getElementById('tempo').innerHTML = "Executou o setTimeout";}, 5000);
     tempo = setInterval(function () {
-        var cronometro = document.getElementById('tempo').innerHTML;
-        var soma = parseInt(cronometro) - 1;
+        let cronometro = document.getElementById('tempo').innerHTML;
+        let soma = parseInt(cronometro) + 1;
 
-        if(soma === 0){
+        if(soma === 60){
             document.getElementById('tempo').innerHTML = "Tempo esgotado!!!";
             pararContagem();
         }else{
