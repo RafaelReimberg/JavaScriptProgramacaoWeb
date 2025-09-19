@@ -22,6 +22,34 @@ function verificaCor(){
             // o que acontece
             document.body.style.backgroundColor = "yellow"; 
             break;
+        case "verde":
+            // o que acontece
+            document.body.style.backgroundColor = "green"; 
+            break;
+        case "rosa":
+            // o que acontece
+            document.body.style.backgroundColor = "pink";
+            break;
+        case "roxo":
+            // o que acontece
+            document.body.style.backgroundColor = "purple";
+            break;
+        case "laranja":
+            // o que acontece
+            document.body.style.backgroundColor = "orange";
+            break;
+        case "preto":
+            // o que acontece
+            document.body.style.backgroundColor = "black";
+            break;
+        case "branco":
+            // o que acontece
+            document.body.style.backgroundColor = "white";  
+            break;
+        case "cinza":
+            // o que acontece
+            document.body.style.backgroundColor = "gray";  
+            break;       
         default:
             // o que acontece
             document.getElementById("texto"). innerHTML = (`Nenhuma cor disponível para: <strong>${cor}</strong>`);
