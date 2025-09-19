@@ -3,9 +3,9 @@
 Laços oferecem um jeito fácil e rápido de executar uma ação repetidas vezes.
 */
 
-/*for (let r = 0; r < 1001; r++){
+for (let r = 0; r < 11; r++){
     document.getElementById("texto").innerHTML += r + ", ";
-}*/
+}
 
 var year = new Date().getFullYear();
 
