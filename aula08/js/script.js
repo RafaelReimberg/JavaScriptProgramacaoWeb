@@ -66,6 +66,7 @@ function paraCelsius(valorFahrenheit){
 var graus = paraCelsius(77);
 
 document.getElementById("funcao4").innerHTML = ("A temperatura é de " + graus + " graus celsius");
+
 //--------------------------------------------------------------------------------------------------
 
 function minhaFuncao(){

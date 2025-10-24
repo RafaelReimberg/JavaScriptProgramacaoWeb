@@ -12,10 +12,10 @@ Objetos também podem ter métodos. Um Método é uma função colocadas dentro 
 */
 
 const carro = {
-    marca: "honda", 
-    modelo: "fit", 
-    ano: 2007, 
-    placa: "DWM-4345",
+    marca: "Honda", 
+    modelo: "HR-v", 
+    ano: 2016, 
+    placa: "KQX3C10",
     buzina: function() {alert('Biiiiiii')},
     completo: function(){
         return "A marca é um "+this.marca+", e o modelo é "+this.modelo+ ", e o ano é "+this.ano+ ", sua placa é "+this.placa;
